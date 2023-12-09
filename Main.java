@@ -20,15 +20,45 @@ class Main {
     System.out.println("Is anyone in your party a vegetarian?");
     isVegetarian = keyboard.nextLine();
 
+    //Validate the user's input.
+    while (!(isVegetarian.equalsIgnoreCase("YES")) && !(isVegetarian.equalsIgnoreCase("NO")))
+           {
+      System.out.println("ERROR! Enter 'Yes' or 'No' as" +
+                        " your response to the question.");
+             System.out.println("Let's try that again.");
+             System.out.println("Type your response below:");
+             isVegetarian = keyboard.nextLine();
+           }
+
     //Ask if anyone in the party is vegan.
     System.out.println();
     System.out.println("Is anyone in your party a vegan?");
     isVegan = keyboard.nextLine();
 
+    //Validate the user's input.
+    while (!(isVegan.equalsIgnoreCase("YES")) && !(isVegan.equalsIgnoreCase("NO")))
+           {
+      System.out.println("ERROR! Enter 'Yes' or 'No' as" +
+                        " your response to the question.");
+             System.out.println("Let's try that again.");
+             System.out.println("Type your response below:");
+              isVegan = keyboard.nextLine();
+           }
+
     //Ask if anyone in the party is gluten-free.
     System.out.println();
     System.out.println("Is anyone in your party gluten-free?");
     isGluten_Free = keyboard.nextLine();
+
+    //Validate the user's input.
+    while (!(isGluten_Free.equalsIgnoreCase("YES")) && !(isGluten_Free.equalsIgnoreCase("NO")))
+           {
+      System.out.println("ERROR! Enter 'Yes' or 'No' as" +
+                        " your response to the question.");
+             System.out.println("Let's try that again.");
+             System.out.println("Type your response below:");
+             isGluten_Free = keyboard.nextLine();
+           }
 
     System.out.println();
     System.out.println();
